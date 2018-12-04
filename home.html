@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <head>
 </head>
 <body>
@@ -9,12 +8,9 @@
         xhr.open('GET','/creatserver/music.json',true)   
         xhr.send()
         xhr.addEventListener('load',function(){
-        var data = xhr.responseText
-        console.log(JSON.parse(data))
+        console.log(JSON.parse(xhr.responseText))
         
         })
 </script>
-
-
 </body>
-</html>
+
