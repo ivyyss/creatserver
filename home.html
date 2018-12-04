@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+
+<script>
+ var xhr = new XMLHttpRequest()
+        xhr.open('GET','/hello.json',true)   
+        xhr.send()
+        xhr.addEventListener('load',function(){
+        
+        var data = xhr.responseText
+        console.log(data)
+        
+        })
+
+</script>
+
+
+</body>
+</html>
